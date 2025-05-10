@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admisiones</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Proceso de Admisión</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="admisiones">
+        <h2>Requisitos y Pasos</h2>
+        <p>Para ingresar a nuestra institución, sigue estos pasos:</p>
+        <ol>
+            <li>Completa el formulario de inscripción</li>
+            <li>Presenta los documentos requeridos</li>
+            <li>Realiza la entrevista con el equipo académico</li>
+            <li>Recibe la confirmación de admisión</li>
+        </ol>
+
+        <h3>Formulario de Inscripción</h3>
+        <form action="procesar_formulario.php" method="post">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="curso">Curso de Interés:</label>
+            <select id="curso" name="curso">
+                <option value="matematicas">Matemáticas Avanzadas</option>
+                <option value="programacion">Programación y Desarrollo Web</option>
+                <option value="ciencias">Ciencias Naturales</option>
+                <option value="idiomas">Idiomas</option>
+            </select>
+
+            <button type="submit">Enviar Solicitud</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Institución Educativa | Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

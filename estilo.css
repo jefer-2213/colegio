@@ -1,0 +1,136 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("FONDO.JPG") no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+/* Encabezado con mejor estructura */
+header {
+    background: rgba(0, 51, 102, 0.8);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/* Posicionamiento adecuado del logo */
+.logo {
+    width: 80px;
+    margin-left: 20px;
+}
+
+/* Menú de navegación optimizado */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Sección de bienvenida y admisiones */
+.bienvenida, .admisiones {
+    padding: 50px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.bienvenida {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.admisiones {
+    background: rgba(150, 186, 226, 0.9);
+}
+
+/* Contenedor de cursos con Grid */
+.course-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilos de los cursos */
+.course {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+
+.course img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Formularios estilizados */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Botón interactivo */
+button {
+    background-color: #004080;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #005599;
+}
+
+/* Estadísticas mejor alineadas */
+.stat-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px;
+}
+
+.stat-item {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Ajuste responsivo */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
